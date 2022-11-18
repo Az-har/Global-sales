@@ -1,0 +1,37 @@
+{% extends 'index.html' %}
+{% block head%}<title>Stores</title>{% endblock %}
+{% block stores %} 
+ 
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Stores</h1><br>
+      <form class="row g-3 needs-validation" novalidate  method = "POST">
+        <div class="col-12">
+          <label  class="form-add-label">Store-Name</label>
+          <div class="input-group has-validation">
+            <input type="text" name="brand-name" class="form-add-control"  required >                      
+          </div>
+        </div>
+        <div class="col-12">
+            <label  class="form-add-label">Status</label>
+            <div class="input-group has-validation">
+
+              <select id="status" name="status" class="form-add-control">
+                <option value="select">Select</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+              </select>                     
+            </div>
+          </div>    
+        <div class="col-12" >
+          <button class="btn btn-outline-dark btn-lg" type="submit" >Add</button>
+        </div>
+       
+      </form>
+
+  </main><!-- End #main -->
+
+{% endblock %}
+  

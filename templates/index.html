@@ -1,0 +1,81 @@
+
+  {% extends 'base.html' %}
+  {% block head%}<title>Dashboard</title>{% endblock %}
+  {% block nav %} 
+  
+ <header id="header" class="header fixed-top d-flex flex-wrap align-items-center justify-content-between  ">
+  <div><i class="bi bi-list toggle-sidebar-btn"></i></div>
+  
+  <div></div>
+     <a href="index.html" class="logo d-flex ">
+        <img src="{{ url_for('static',filename='logo.png') }}" alt="">
+        <span class="text-center d-none d-lg-block">Data Analytics</span>
+      </a>
+  <div><span></span></div>
+  <div><span></span></div>
+  </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+      <ul class="sidebar-nav" id="sidebar-nav">
+  
+        <li class="nav-item">
+          <a class="nav-link " href="/dash">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+      
+    
+        <li class="nav-item">
+          <a class="nav-link " data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+            <i class="bi bi-question-square"></i><span>Help</span>
+          </a>
+          
+        </li><!-- End Charts Nav -->
+    
+        <li class="nav-item">
+          <a class="nav-link " href="pages-login.html">
+            <i class="bi bi-box-arrow-in-left"></i>
+            <span>Logout</span>
+          </a>
+        </li><!-- End Login Page Nav -->
+    
+      </ul>
+  
+    </aside><!-- End Sidebar-->
+    {% block add %}
+    {% endblock %}
+    {% block brand %} 
+    {% endblock %}
+    {% block stores %} 
+    {% endblock %}
+    {% block dash %} 
+    {% endblock %}
+  
+
+{% endblock %}
+
+
+
+
+
+</li><!-- End Dashboard Nav -->
+<li class="nav-item">
+  <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="/brands">
+    <i class="bi bi-menu-button-wide"></i><span>Brands</span>
+  </a>
+</li><!-- End Components Nav -->
+
+<li class="nav-item">
+  <a class="nav-link " data-bs-target="#tables-nav" data-bs-toggle="collapse" href="/stores">
+    <i class="bi bi-cart-dash"></i><span>Stores</span>
+  </a>
+</li><!-- End Tables Nav -->
+
+<li class="nav-item">
+  <a class="nav-link " data-bs-target="#forms-nav" data-bs-toggle="collapse" href="/additems">
+    <i class="bi bi-cart-plus"></i><span>Add Products</span>
+  </a>
+</li>End Forms Nav
+

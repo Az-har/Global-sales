@@ -1,0 +1,28 @@
+
+    {% extends 'base.html' %}
+
+    {% block head%}<title>Main</title>{% endblock %}
+    {% block body %} 
+    <div>
+        <header id="header" class="header fixed-top d-flex ">
+           <div class="d-flex align-items-center justify-content-between">
+             <a href="index.html" class="logo d-flex align-items-center">
+               <img src="{{ url_for('static',filename='logo.png') }}" alt="">
+               <span class="d-none d-lg-block">Data Analytics</span>
+             </a>
+           </div>
+               <nav class="header-nav ms-auto ">
+                 <a  href="/signin"><button class="btn btn-light" id="sign-btn">signin</button></a>
+               </nav><!-- End Icons Navigation -->
+         </header>
+             <div class="slogan">
+                <b><p>Data Analyzed for anywhere</p></b> 
+             </div>
+             <div class="benifit">
+               <p>Manage the Data.Track the Trend. <br>
+                  One Data Analytics software to <br>
+                  run all your Analytical problem.</p>
+                  <a  href="/signin"><button class="btn btn-dark" id="sign-btn">Get started</button></a>
+             </div>
+     </div>
+    {% endblock %}
